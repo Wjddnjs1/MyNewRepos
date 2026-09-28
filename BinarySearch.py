@@ -1,4 +1,4 @@
-a = [5, 12, 28, 29, 40, 41, 53, 54, 68, 69, 79, 80, 83, 89, 90, 100]
+a = [5, 12, 28, 29, 40, 41, 53, 54, 98, 69, 49, 80, 83, 79, 99, 100]
 x = input('Input a number: ')
 left = 0
 right = len(a) - 1
@@ -15,5 +15,5 @@ while left <= right:
     else:
         right = middle - 1
 
-if left > right: # Fail
+if left > right: 
     print('There is not {:3} in this list.'.format(x))

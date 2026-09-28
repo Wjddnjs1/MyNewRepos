@@ -11,18 +11,18 @@ def partition(a, pivot, high):
     while True:
         while i < high and a[i] < a[pivot]:
             i += 1
-        while j > pivot and a[j] > a[pivot]:
-            j -= 1
-        if j <= i:
-            break
-        a[i], a[j] = a[j], a[i]
-        i += 1
-        j -= 1
+        # while j > pivot and a[j] > a[pivot]:
+        #     j -= 1
+        # if j <= i:
+        #     break
+        # a[i], a[j] = a[j], a[i]
+        # i += 1
+        # j -= 1
 
     a[pivot], a[j] = a[j], a[pivot]
     return j
 
-
+#GG
 a = [54,88,77,26,93,17,49,10,17,77,11,31,22,44,17,20]
 print('Original list:\t', a)  
 qsort(a, 0, len(a)-1)
